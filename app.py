@@ -1,45 +1,14 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-
-get_ipython().run_line_magic('pip', 'install langchain gradio')
-
-
-# In[ ]:
-
-
 import gradio as gr
-
-def greet(name):
-    return "Hello " + name + "!"
-
-demo = gr.Interface(fn=greet, inputs="text", outputs="text")
-demo.launch()
-
-
-# In[ ]:
-
-
-get_ipython().system('wget https://patents.justia.com/patent/11663394')
-
-
-# In[3]:
-
-
 from langchain.document_loaders import BSHTMLLoader
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.embeddings import OpenAIEmbeddings
+from langchain.vectorstores import Chroma
+import os
 
 loader = BSHTMLLoader("11663394.html")
 data = loader.load()
 text = data[0].page_content.replace("\n", " ")
 data[0].page_content = data[0].page_content.replace("\n", " ")
-
-
-# In[4]:
-
-
-from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 text_splitter = RecursiveCharacterTextSplitter(
     # Set a really small chunk size, just to show.
@@ -51,14 +20,6 @@ text_splitter = RecursiveCharacterTextSplitter(
 
 texts = text_splitter.split_documents(data)
 print(texts)
-
-
-# In[5]:
-
-
-from langchain.embeddings import OpenAIEmbeddings
-from langchain.vectorstores import Chroma
-import os
 
 openai_key = os.environ["OPENAI_API_KEY"]
 
