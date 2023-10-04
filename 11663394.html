@@ -1,0 +1,810 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>US Patent for Systems for generating instances of variable fonts Patent (Patent #  11,663,394 issued May 30, 2023) - Justia Patents Search</title>
+            <meta  name="description" content="In implementations of systems for generating instances of variable fonts, a computing device implements a similarity system to receive input data describing attribute values of glyphs of an input font. The similarity system generates a custom instance of a variable font by modifying a value of a registered design axis of the variable font based on the attribute values. A similarity score is determined that describes a visual similarity between the custom instance of the variable font and the input font. The similarity system identifies an additional design axis of the variable font based on the similarity score and generates an instance of the variable font that is visually similar to the input font by modifying a value of the additional design axis.">
+    <meta name="keywords" content="Systems for generating instances of variable fonts, Patent">
+
+                    <meta name="robots" content="index, follow">
+        
+                    <link rel="canonical" href="https://patents.justia.com/patent/11663394" />
+        
+        <link rel="stylesheet" type="text/css" href="https://justatic.com/v/20231003111152/shared/css/core.css">
+
+        <link href="https://plus.google.com/113923255404381000955" rel="publisher" />
+
+        <link rel="icon" type="image/svg+xml" href="https://justatic.com/v/20231003111152/shared/images/justia/jbutton_flat_144.svg" />
+        <link rel="icon" type="image/png" sizes="144x144" href="https://justatic.com/v/20231003111152/shared/images/justia/jbutton_flat_144.png" />
+        <link rel="icon" type="image/png" sizes="128x128" href="https://justatic.com/v/20231003111152/shared/images/justia/jbutton_flat_128.png" />
+        <link rel="icon" type="image/x-icon" sizes="16x16 24x24 32x32 48x48 64x64 96x96 128x128" href="https://justatic.com/v/20231003111152/shared/images/justia/justia.ico" />
+        <link rel="apple-touch-icon" type="image/png" sizes="57x57"  href="https://justatic.com/v/20231003111152/shared/images/justia/jbutton_flat_57.png" />
+        <link rel="apple-touch-icon" type="image/png" sizes="72x72"  href="https://justatic.com/v/20231003111152/shared/images/justia/jbutton_flat_72.png" />
+        <link rel="apple-touch-icon" type="image/png" sizes="114x114" href="https://justatic.com/v/20231003111152/shared/images/justia/jbutton_flat_114.png" />
+        <link rel="apple-touch-icon" type="image/png" sizes="144x144" href="https://justatic.com/v/20231003111152/shared/images/justia/jbutton_flat_144.png" />
+        <link rel="apple-touch-icon-precomposed" type="image/png" sizes="57x57" href="https://justatic.com/v/20231003111152/shared/images/justia/jbutton_3d_57.png" />
+        <link rel="apple-touch-icon-precomposed" type="image/png" sizes="72x72" href="https://justatic.com/v/20231003111152/shared/images/justia/jbutton_3d_72.png" />
+        <link rel="apple-touch-icon-precomposed" type="image/png" sizes="114x114" href="https://justatic.com/v/20231003111152/shared/images/justia/jbutton_3d_114.png" />
+        <link rel="apple-touch-icon-precomposed" type="image/png" sizes="144x144" href="https://justatic.com/v/20231003111152/shared/images/justia/jbutton_3d_144.png" />
+        <link rel="shortcut icon" type="image/vnd.microsoft.icon" sizes="16x16 24x24 32x32 48x48 64x64 96x96 128x128" href="https://justatic.com/v/20231003111152/shared/images/justia/justia.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                
+        <meta name="trigger-ga" content="1" />
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-P2QTGCR');</script>
+        <!-- End Google Tag Manager -->
+    </head>
+
+                
+                
+    <body class="patents sticky-footer content-right-sidebar" data-project="patents" data-directive="j-gdpr" data-privacy-policy-url="https://www.justia.com/privacy-policy/">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P2QTGCR"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <header id="header"  data-directive="j-topnav">
+            <div id="sticky-nav">
+                <div class="burger-wrapper">
+                    <div id="hamburger" data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Header" data-gtm-label="Hamburger" class="hamburger">
+                        <div class="inner-ham" style="pointer-events:none">
+                            <span class="lns ln2-1" style="pointer-events:none"></span>
+                            <span class="lns ln2-2" style="pointer-events:none"></span>
+                        </div>
+                    </div>
+                    <div id="header-nav">
+                        <div class="inner-wrapper">
+                            <div class="logo-wrapper">
+                                <a href="/" title="Justia" class="logo">
+                                                                        <img data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Header" data-gtm-label="Logo"  src="https://justatic.com/v/20231003111152//shared/images/logos/justia.svg" alt="Justia" onerror="this.onerror=null; this.src='https://justatic.com/v/20231003111152//shared/images/logos/justia.png">
+                                    <img data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Header" data-gtm-label="Logo - Subdomain"  class="sub-domain" src="https://justatic.com/v/20231003111152//shared/images/logos/justia-patents.svg" alt="Dockets" onerror="this.onerror=null; this.src='https://justatic.com/v/20231003111152//shared/images/logos/justia-patents.png'">
+                                </a>
+                            </div>
+                            <div class="buttons-wrapper">
+                                <div class="topnav-button search-icon" id="search-icon-button">
+                                    <img src="https://justatic.com/v/20231003111152/shared/images/icons/svgfiles/white/search.svg" alt="search" width="22" height="22"/>
+                                </div>
+                                <div class="topnav-button sign-in-icon" id="sign-in-icon-button">
+                                    <img src="https://justatic.com/v/20231003111152/shared/images/icons/svgfiles/white/profile.svg" alt="My Account" width="20" height="20">
+                                </div>
+                                <div id="search-form-wrapper">
+                                    <form action="/search" method="get" class="search-form jform" id="search-form">
+                                        <div class="input-wrapper">
+                                            <input type="text" name="q" value="" id="querybox" title="Search" placeholder="Search">
+                                        </div>
+                                        <button type="submit">
+                                            <img src="https://justatic.com/v/20231003111152/shared/images/icons/svgfiles/blue/search.svg" alt="search" width="22" height="22"/>
+                                        </button>
+                                    </form>
+                                </div>
+                                <div id="accounts-buttons-wrapper" data-directive="j-sign-in-accounts">
+                                    <span class="topnav-button accounts-buttons login-buttons" id="login-buttons-wrapper">
+                                        <span class="login-buttons-wrapper">
+                                            <a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Header Account" data-gtm-label="Log In" data-directive="j-login" href="https://accounts.justia.com/signin?destination=https%3A%2F%2Fpatents.justia.com%2Fpatent%2F11663394" class="login">Log In</a>
+                                            <a href="https://accounts.justia.com/" class="sign-up">Sign Up</a>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="subnavigation">
+                <div class="subnavigation-wrapper">
+                    <ul>
+                        <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Header Navigation" data-gtm-label="Find a Lawyer" href="https://www.justia.com/lawyers">Find a Lawyer</a></li>
+                        <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Header Navigation" data-gtm-label="Ask a Lawyer" href="https://answers.justia.com/">Ask a Lawyer</a></li>
+                        <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Header Navigation" data-gtm-label="Research the Law" href="https://www.justia.com/">Research the Law</a></li>
+                        <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Header Navigation" data-gtm-label="Law Schools" href="https://www.justia.com/law-schools/">Law Schools</a></li>
+                        <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Header Navigation" data-gtm-label="Laws &amp; Regs" href="https://law.justia.com/">Laws &amp; Regs</a></li>
+                        <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Header Navigation" data-gtm-label="Newsletters" href="https://connect.justia.com/case-law-summary-newsletters">Newsletters</a></li>
+                        <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Header Navigation" data-gtm-label="Marketing Solutions" href="https://www.justia.com/marketing/">Marketing Solutions</a>
+                            <div class="sublist">
+                                <div class="sublist-section">
+                                    <ul>
+                                        <li class="sublist-section-title"><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Header Navigation" data-gtm-label="Justia Connect" href="https://www.justia.com/marketing/connect/">Justia Connect</a></li>
+                                        <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Header Navigation" data-gtm-label="Pro Membership" href="https://www.justia.com/marketing/connect/#pro-membership">Pro Membership</a></li>
+                                        <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Header Navigation" data-gtm-label="Basic Membership" href="https://www.justia.com/marketing/connect/#basic-membership">Basic Membership</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sublist-section">
+                                    <ul>
+                                        <li class="sublist-section-title"><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Header Navigation" data-gtm-label="Justia Lawyer Directory" href="https://www.justia.com/marketing/lawyer-directory/">Justia Lawyer Directory</a></li>
+                                        <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Header Navigation" data-gtm-label="Platinum Placements" href="https://www.justia.com/marketing/lawyer-directory/platinum/">Platinum Placements</a></li>
+                                        <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Header Navigation" data-gtm-label="Gold Placements" href="https://www.justia.com/marketing/lawyer-directory/gold/">Gold Placements</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sublist-section">
+                                    <ul>
+                                        <li class="sublist-section-title"><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Header Navigation" data-gtm-label="Justia Elevate" href="https://www.justia.com/marketing/elevate/">Justia Elevate</a></li>
+                                        <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Header Navigation" data-gtm-label="SEO" href="https://www.justia.com/marketing/elevate/search-engine-optimization/">SEO</a></li>
+                                        <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Header Navigation" data-gtm-label="Websites &amp; LSA Management" href="https://www.justia.com/marketing/elevate/law-firm-websites/">Websites</a></li>
+                                        <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Header Navigation" data-gtm-label="Blogs" href="https://www.justia.com/marketing/elevate/law-blogs/">Blogs</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sublist-section">
+                                    <ul>
+                                        <li class="sublist-section-title"><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Header Navigation" data-gtm-label="Justia Amplify" href="https://www.justia.com/marketing/amplify/">Justia Amplify</a></li>
+                                        <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Header Navigation" data-gtm-label="PPC Management" href="https://www.justia.com/marketing/amplify/cpc-ppc/">PPC Management</a></li>
+                                        <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Header Navigation" data-gtm-label="Google Business Profile" href="https://www.justia.com/marketing/amplify/google-business-profile/">Google Business Profile</a></li>
+                                        <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Header Navigation" data-gtm-label="Social Media" href="https://www.justia.com/marketing/amplify/social-media-networking/">Social Media</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sublist-section">
+                                    <ul>
+                                        <li class="sublist-section-title"><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Header Navigation" data-gtm-label="Justia Onward Blog" href="https://onward.justia.com/">Justia Onward Blog</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="has-topnav-padding font-opensans" data-directive="j-announcement" data-project="patents"></div>
+        <div id="main-content" class="main-content font-opensans">
+            <nav class="breadcrumbs font-helvetica small-font">
+                <a href="https://www.justia.com">Justia</a>
+                <span class="breadcrumb-separator"></span>
+                            <a href="/">Patents</a> <span class="breadcrumb-separator"></span>
+        US Patent for Systems for generating instances of variable fonts Patent (Patent #  11,663,394)
+                </nav>
+            <div class="primary-content-wrapper">
+                <div class="primary-content">
+                                            <ins class="adsbygoogle"
+                        style="display:block"
+                        data-ad-client="ca-pub-4319265774032289"
+                        data-ad-slot="2491452856"
+                        data-ad-format="auto"></ins>
+                                        <div class="wrapper jcard has-padding-30 blocks">
+                                                    <div class="wrapper">
+                <div class="title-wrapper">
+            <h1 class="heading-1"> Systems for generating instances of variable fonts </h1>
+        </div>
+        <div class="wrap">
+            <div id="byline" class="small-font">
+            <time datetime="2021-11-21" class="color-dove-gray">Nov 21, 2021</time>
+        
+                        - <a href="/assignee/adobe-inc">Adobe Inc.</a>            
+            </div>                            <div id="abstract" class="to-xlarge-font">
+                    <p>In implementations of systems for generating instances of variable fonts, a computing device implements a similarity system to receive input data describing attribute values of glyphs of an input font. The similarity system generates a custom instance of a variable font by modifying a value of a registered design axis of the variable font based on the attribute values. A similarity score is determined that describes a visual similarity between the custom instance of the variable font and the input font. The similarity system identifies an additional design axis of the variable font based on the similarity score and generates an instance of the variable font that is visually similar to the input font by modifying a value of the additional design axis.</p>
+                </div>
+                            <div id="company-latest" class="wrapper">
+        <div class="title-wrapper">
+        	<h2 class="heading-2">Latest Adobe Inc. Patents:</h2>
+        </div>
+        <div class="wrap indented">
+        <ul class="list-gutter--tiny">
+	        	            <li>
+	            	<a href="/patent/20230297430">Machine-Learning Model Retargeting</a>
+	            </li>
+	        	            <li>
+	            	<a href="/patent/20230289970">Image Inversion Using Multiple Latent Spaces</a>
+	            </li>
+	        	            <li>
+	            	<a href="/patent/20230290146">Automated Digital Document Generation from Digital Videos</a>
+	            </li>
+	        	            <li>
+	            	<a href="/patent/20230281379">AUTOMATIC DETECTION AND REMOVAL OF TYPESETTING ERRORS IN ELECTRONIC DOCUMENTS</a>
+	            </li>
+	        	            <li>
+	            	<a href="/patent/20230281893">VECTOR OBJECT PATH SEGMENT EDITING</a>
+	            </li>
+	        	        </ul>
+        </div>
+    </div>
+            <div id="content-navigation">
+    <span class="right-10">Skip to:</span>
+            <span>
+            <a href="#description">Description</a>
+        </span>
+                <span>&nbsp;·&nbsp;</span><span>
+            <a href="#claims">Claims</a>
+        </span>
+                <span>&nbsp;·&nbsp;</span><span>
+            <a href="#citations">References Cited</a>
+        </span>
+        <span>&nbsp;·&nbsp;</span><span><a href="#history">Patent History</a></span>
+            <span>&nbsp;·&nbsp;</span><span>
+            <a href="#history">Patent History</a>
+        </span>
+    </div>
+            	<div id="description" class="wrapper">
+		<div class="title-wrapper">
+			<strong class="heading-2">Description</strong>
+		</div>
+		<div class="wrap">
+             <strong class="heading-4">RELATED APPLICATIONS</strong> <p id="p-0002" num="0001">This application is a continuation of and claims priority to U.S. patent application Ser. No. 16/942,286, filed Jul. 29, 2020, entitled “Systems for Generating Instances of Variable Fonts,” the entire disclosure of which is hereby incorporated by reference herein in its entirety.</p>   <strong class="heading-4">BACKGROUND</strong> <p id="p-0003" num="0002">Text is one of the most important tools available to digital artists because it is usable to simultaneously convey a message based on a substance of the text and propagate a theme or a brand based on a visual appearance of the text. Digital content creation systems render glyphs of text using different fonts to change the visual appearance of the text depicted in digital content. In some scenarios, it is desirable to identify fonts based on a visual appearance of glyphs rendered using the fonts such as to identify fonts which are visually similar to a particular font. For example, the particular font may be a custom font which is not widely available. In this example, a digital artist desires a font that is visually similar to the particular font.</p> <p id="p-0004" num="0003">Conventional systems display multiple indications of fonts which are visually similar to the particular font, for example, to indicate available visually similar fonts if the particular font is not available. These visually similar fonts are determined based on similarity scores calculated from Euclidean distances between feature vector representations of the fonts. For example, if Euclidean distances are relatively small for feature vectors corresponding to first and second fonts, then the first font and the second font have a high similarity score and the first and second fonts are visually similar. Alternatively, if Euclidean distances are relatively large for the feature vectors corresponding to the first and second fonts, then the first font and the second font have a low similarity score and the first and second fonts are not visually similar.</p> <p id="p-0005" num="0004">Conventional systems, however, are not capable of identifying instances of variable fonts that are visually similar to the particular font. A variable font is a type of font that has a visual appearance which is changeable by modifying a value of a design axis of the variable font. For example, the variable font includes a default or a named instance and increasing and/or decreasing the value of the design axis generates instances of the variable font which are visually distinct from the default instance. Many variable fonts include multiple design axes such that each value of each design axis corresponds to a unique instance of the variable font. Because a single variable font is usable to generate a multitude of visually distinct instances of the single variable font, there is no specific instance of the variable font that is representative of the variable font for calculating a similarity score, for example, based on Euclidean distances.</p> <strong class="heading-4">SUMMARY</strong> <p id="p-0006" num="0005">Systems and techniques are described for generating instances of variable fonts. In one example, a computing device implements a similarity system to automatically generate an instance of a variable font that is visually similar to an input font. For example, the similarity system receives input data describing attribute values of glyphs of the input font. The similarity system generates a custom instance of the variable font by modifying a value of a design axis of the variable font based on the attribute values of the glyphs of the input font.</p> <p id="p-0007" num="0006">A similarity score is determined that describes a visual similarity between the custom instance of the variable font and the input font. The similarity system identifies an additional design axis of the variable font based on the similarity score. For example, the similarity system identifies the additional design axis having a higher absolute value of correlation with the similarity score than other additional design axes of the variable font. The similarity system generates the instance of the variable font that is visually similar to the input font by modifying a value of the additional design axis.</p> <p id="p-0008" num="0007">This Summary introduces a selection of concepts in a simplified form that are further described below in the Detailed Description. As such, this Summary is not intended to identify essential features of the claimed subject matter, nor is it intended to be used as an aid in determining the scope of the claimed subject matter.</p>   <description-of-drawings> <strong class="heading-4">BRIEF DESCRIPTION OF THE DRAWINGS</strong> <p id="p-0009" num="0008">The detailed description is described with reference to the accompanying figures. Entities represented in the figures may be indicative of one or more entities and thus reference may be made interchangeably to single or plural forms of the entities in the discussion.</p> <p id="p-0010" num="0009"><figref idref="DRAWINGS">FIG. <strong>1</strong></figref> is an illustration of an environment in an example implementation that is operable to employ digital systems and techniques for generating instances of variable fonts as described herein.</p> <p id="p-0011" num="0010"><figref idref="DRAWINGS">FIG. <strong>2</strong></figref> depicts a system in an example implementation showing operation of a similarity module for generating instances of variable fonts.</p> <p id="p-0012" num="0011"><figref idref="DRAWINGS">FIGS. <strong>3</strong>A, <strong>3</strong>B, and <strong>3</strong>C</figref> illustrate an example of generating an instance of a variable font that is visually similar to an input font.</p> <p id="p-0013" num="0012"><figref idref="DRAWINGS">FIG. <strong>4</strong></figref> is a flow diagram depicting a procedure in an example implementation in which input data describing attribute values of glyphs of an input font is received and an instance of a variable font is generated that is visually similar to the input font.</p> <p id="p-0014" num="0013"><figref idref="DRAWINGS">FIG. <strong>5</strong></figref> illustrates an example of generated instances of a variable font that are visually similar to example input fonts.</p> <p id="p-0015" num="0014"><figref idref="DRAWINGS">FIG. <strong>6</strong></figref> is a flow diagram depicting a procedure in an example implementation in which a digital image depicting glyphs rendered using an input font is received and an instance of a variable font is generated that is visually similar to the input font.</p> <p id="p-0016" num="0015"><figref idref="DRAWINGS">FIG. <strong>7</strong></figref> illustrates an example of a user interface in which instances of variable fonts are identified as being visually similar to an input font.</p> <p id="p-0017" num="0016"><figref idref="DRAWINGS">FIG. <strong>8</strong></figref> illustrates an example system that includes an example computing device that is representative of one or more computing systems and/or devices that may implement the various techniques described herein.</p> </description-of-drawings>   <strong class="heading-4">DETAILED DESCRIPTION</strong> <p id="p-0018" num="0017">Overview</p> <p id="p-0019" num="0018">Conventional systems associate a first font and a second font as being visually similar fonts based on a similarity score that describes a visual similarity between the first and second fonts. These similarity scores are calculated from Euclidean distances between feature vector representations of the fonts. It is not possible to represent a variable font as a feature vector for comparison with a feature vector representation of another font. This is because the variable font is representative of a variety of visually distinct potential instances of the variable font.</p> <p id="p-0020" num="0019">Because conventional systems identify similar fonts by comparing feature vectors of the fonts, the conventional systems would require a feature vector representation of every possible instance of a variable font in order to determine if any of these instances are visually similar to an input font. Since a single variable font includes a theoretically unlimited number of unique instances, identifying a particular instance which is visually similar to the input font is impractical or impossible using conventional techniques.</p> <p id="p-0021" num="0020">In order to overcome these limitations, systems and techniques are described for generating instances of variable fonts. In an example, a computing device implements a similarity system to automatically generate an instance of a variable font that is visually similar to an input font. For example, the similarity system receives input data describing attribute values of glyphs of the input font.</p> <p id="p-0022" num="0021">The attribute values of the glyphs of the input font define visual features of these glyphs such as glyph weight, width, slant, optical size, and so forth. The similarity system processes variable font data describing a variable font and identifies a design axis of the variable font. In one example, the design axis is a registered design axis of the variable font such as an Italic axis, an Optical Size axis, a Slant axis, a Width axis, a Weight axis, and so forth. The similarity system determines a relationship between values of the design axis of the variable font and attribute values of glyphs rendered using instances of the variable font. The similarity system uses this relationship to identify a value of the design axis which corresponds to an attribute value of the glyphs of the input font.</p> <p id="p-0023" num="0022">The similarity system applies the identified value to the design axis and generates a first custom instance of the variable font. For example, glyphs rendered using the first custom instance have the attribute value of the glyphs of the input font. A first similarity score is determined that describes a visual similarity between the first custom instance of the variable font and the input font. The similarity system identifies an additional design axis of the variable font based on a correlation between values of the additional design axis and the first similarity score. In one example, the similarity system identifies the additional design axis from a plurality of other additional design axes as having axis values expected to affect the first similarity score to a greater degree than axis values of the plurality of other additional design axes. In this example, the similarity system selects the additional design axis as having a higher absolute value of correlation with the first similarity score than the plurality of other additional design axes.</p> <p id="p-0024" num="0023">The similarity system generates the instance of the variable font that is visually similar to the input font by modifying a value of the additional design axis. For example, the similarity system generates a second custom instance of the variable font using a median value of the additional design axis. A second similarity score is determined between the second custom instance of the variable font and the input font. The similarity system then uses a value of the additional design axis to a right of the median value and generates a third custom instance of the variable font.</p> <p id="p-0025" num="0024">A third similarity score is determined between the third custom instance of the variable font and the input font. If the third similarity score is greater than the second similarity score, then the similarity system continues evaluating values further to the right of the median value in this manner until a value of the additional design axis is identified which corresponds to a maximum similarity score. If the third similarity score is not greater than the second similarity score, then the similarity system evaluates values of the additional design axis to a left of the median value until the value is identified that corresponds to the maximum similarity score. The similarity system generates an instance of the variable font using the first custom instance and the value of the additional design axis corresponding to the maximum similarity score as the instance of the variable font that is visually similar font to the input font.</p> <p id="p-0026" num="0025">By generating instances of variable fonts in this manner, the described systems are capable of generating instances of a single variable font which are visually similar to multiple different input fonts. These visually similar fonts are usable in addition to the input fonts or in place of the input fonts. In this manner, the described systems can reduce computing resource consumption by representing multiple different input fonts using instances of a single variable font. For example, a single variable font file is usable to replace font files of multiple input fonts. Thus, a font file repository having many font files of different fonts is replaceable with a repository having a few variable font files and/or a single variable font file.</p> <strong class="heading-4">Term Examples</strong> <p id="p-0027" num="0026">As used herein, the term “variable font” refers to a font that supports multiple font faces along at least one design axis.</p> <p id="p-0028" num="0027">As used herein, the term “design axis” refers to an axis of a variable font having a range of values which may be adjusted to modify an attribute of glyphs rendered using an instance of the variable font. By way of example, a design axis may be registered or unregistered. Examples of registered design axes include Italic, Optical Size, Slant, Width, Weight, etc. Examples of unregistered design axes include Serif, xHeight, Ascent, Descent, and so forth.</p> <p id="p-0029" num="0028">As used herein, the term “attribute” of a glyph refers to a visual feature of the glyph. Examples of attributes include weight, width, slant, optical size, etc.</p> <p id="p-0030" num="0029">As used herein, the term “instance” of a variable font refers to a font face corresponding to a particular position in a design-variation space of the variable font. By way of example, the font face of an instance of a variable font is usable to render glyphs of the variable font.</p> <p id="p-0031" num="0030">As used herein, the term “master” refers to a set of source font data that includes complete outline data for a particular font face.</p> <p id="p-0032" num="0031">In the following discussion, an example environment is first described that may employ the techniques described herein. Example procedures are also described which may be performed in the example environment as well as other environments. Consequently, performance of the example procedures is not limited to the example environment and the example environment is not limited to performance of the example procedures.</p> <strong class="heading-4">Example Environment</strong> <p id="p-0033" num="0032"><figref idref="DRAWINGS">FIG. <strong>1</strong></figref> is an illustration of an environment <strong>100</strong> in an example implementation that is operable to employ digital systems and techniques as described herein. The illustrated environment <strong>100</strong> includes a computing device <strong>102</strong> connected to a network <strong>104</strong>. The computing device <strong>102</strong> is configurable as a desktop computer, a laptop computer, a mobile device (e.g., assuming a handheld configuration such as a tablet or mobile phone), and so forth. Thus, the computing device <strong>102</strong> may range from a full resource device with substantial memory and processor resources (e.g., personal computers, game consoles) to a low-resource device with limited memory and/or processing resources (e.g., mobile devices). Additionally, the computing device <strong>102</strong> can be representative of a plurality of different devices, such as multiple servers utilized by a business to perform operations “over the cloud.”</p> <p id="p-0034" num="0033">The illustrated environment <strong>100</strong> also includes a display device <strong>106</strong> that is communicatively coupled to the computing device <strong>102</strong> via a wired or a wireless connection. A variety of device configurations are usable to implement the computing device <strong>102</strong> and/or the display device <strong>106</strong>. The computing device <strong>102</strong> includes a storage device <strong>108</strong> and similarity module <strong>110</strong>. The storage device <strong>108</strong> is illustrated to include variable font data <strong>112</strong>.</p> <p id="p-0035" num="0034">The variable font data <strong>112</strong> describes a plurality of variable fonts available to the similarity module <strong>110</strong>. For example, the variable font data <strong>112</strong> includes a font file for each of the plurality of variable fonts. These font files define design axes used by the variable fonts, adjustable ranges of the design axes, default or named instances of the variable fonts, and so forth.</p> <p id="p-0036" num="0035">The similarity module <strong>110</strong> is illustrated as having, receiving, and/or transmitting input data <strong>114</strong>. The input data <strong>114</strong> describes glyphs of an input font <strong>116</strong>. In one example, the input data <strong>114</strong> includes a digital image depicting glyphs rendered using the input font <strong>116</strong>. In this example, the input font <strong>116</strong> may or may not be available to the similarity module <strong>110</strong>. In an example, the input data <strong>114</strong> includes an electronic document having glyphs of text rendered using the input font <strong>116</strong>. In another example, the input data <strong>114</strong> includes a font file corresponding to the input font <strong>116</strong>. The input font <strong>116</strong> may be a non-variable font or an instance of a variable font.</p> <p id="p-0037" num="0036">As shown, the similarity module <strong>110</strong> processes the input data <strong>114</strong> to determine attributes of glyphs of the input font <strong>116</strong>. In some examples, these attributes include a weight or a thickness of a stem of a glyph of the input font <strong>116</strong>. In one example, the attributes of the glyphs include a width or a distance between origins of consecutive glyphs of the input font <strong>116</strong>. For example, the attributes of the glyphs of the input font <strong>116</strong> include a slant or an angle between a vertical stem of a glyph and a y-axis of the glyph's bounding box.</p> <p id="p-0038" num="0037">The similarity module <strong>110</strong> also processes the variable font data <strong>112</strong> and identifies a design axis of a variable font such that values of the design axis are proportional to an attribute of glyphs of the variable font. To define a relationship between the design axis values and values of the attribute, the similarity module <strong>110</strong> determines attribute values of glyphs of a default or a named instance of the variable font. The similarity module <strong>110</strong> also determines a value or values of the design axis for the default instance of the variable font. By comparing the values of the design axis and corresponding values of the attribute of the glyphs, the similarity module <strong>110</strong> derives the relationship between the design axis values and the attribute values for the variable font.</p> <p id="p-0039" num="0038">In one example, the similarity module <strong>110</strong> determines whether the variable font uses a registered design axis such as an Italic axis, an Optical Size axis, a Slant axis, a Width axis, and/or a Weight axis. The similarity module <strong>110</strong> derives a relationship between registered axis values and corresponding glyph attributes for each registered design axis used by the variable font. Consider an example in which the variable font uses the Weight axis and the similarity module <strong>110</strong> derives a relationship between the Weight axis values and values of weights of glyphs of instances of the variable font. In this example, the vertical stem thickness or the weight of a glyph of the variable font is directly proportional to the values of the Weight axis. This relationship is also a function of a number of masters included in the variable font. For example, if the variable font includes multiple masters, then the relationship between the values of the Weight axis and the weights of the glyphs may be defined by multiple linear equations.</p> <p id="p-0040" num="0039">The similarity module <strong>110</strong> leverages the relationship between design axis values and the attribute values of the glyphs of the variable font to identify a design axis value that corresponds to an attribute value of the input font <strong>116</strong>. The similarity module <strong>110</strong> applies the identified design axis value to the variable font and generates an instance of the variable font that is visually similar to the input font <strong>116</strong>. Consider the previous example in which the similarity module <strong>110</strong> derives the relationship between the values of the Weight axis and the weights of the glyphs of the variable font. The similarity module <strong>110</strong> determines that glyphs of the input font <strong>116</strong> have a particular weight or vertical stem thickness. In this example, the similarity module <strong>110</strong> uses the relationship between the Weight axis values and the weights of the glyphs of the variable font to identify a value of the Weight axis which corresponds to the particular weight of the glyphs of the input font <strong>116</strong>. The similarity module <strong>110</strong> uses the identified Weight axis value to generate an instance of the variable font with glyphs that also have the particular weight of the glyphs of the input font <strong>116</strong>.</p> <p id="p-0041" num="0040">In the previous example, the similarity module <strong>110</strong> uses the relationship between the values of the Weight axis and the weights of the glyphs of the variable font to generate the instance of the variable font having glyphs with weights based on weights of glyphs of the input font <strong>116</strong>. Thus, the generated instance of the variable font is visually similar to the input font <strong>116</strong> because the glyphs of the generated instance of the variable font have the weights of the glyphs rendered using the input font <strong>116</strong>. In one example, the similarity module <strong>110</strong> determines a similarity score between the generated instance of the variable font and the input font <strong>116</strong>.</p> <p id="p-0042" num="0041">To do so, the similarity module <strong>110</strong> generates or receives a latent representation of the input font <strong>116</strong> and a latent representation of the generated instance of the variable font. In an example, the similarity module <strong>110</strong> generates the latent representations of the input font <strong>116</strong> and the generated instance of the variable font using one or more convolutional neural networks. From these latent representations, the similarity module <strong>110</strong> extracts a feature vector describing a visual appearance of the input font <strong>116</strong> and a feature vector describing a visual appearance of the generated instance of the variable font. The similarity module <strong>110</strong> determines the similarity score by calculating a Euclidean distance between the feature vectors. In one example, a relatively small Euclidean distance corresponds to a relatively high similarity score whereas a relatively large Euclidean distance between the feature vectors corresponds to a relatively low similarity score.</p> <p id="p-0043" num="0042">Continuing the previous example, the similarity module <strong>110</strong> determines that the variable font also uses the Width axis. In this continued example, the similarity module <strong>110</strong> determines that the glyphs of the input font <strong>116</strong> have a particular width by processing the input data <strong>114</strong>. The similarity module <strong>110</strong> also determines a relationship between values of the Width axis and widths of the glyphs of instances of the variable font. The similarity module <strong>110</strong> is implemented leverage the relationship between the values of the Width axis and corresponding widths of glyphs of instances of the variable font to identify a value of the Width axis corresponding to the particular width of the glyphs of the input font <strong>116</strong>.</p> <p id="p-0044" num="0043">For example, the similarity module <strong>110</strong> uses the identified value of the Width axis to generate an instance of the variable font such that glyphs of the instance of the variable font have the particular width of the glyphs of the input font <strong>116</strong>. In this example, the similarity module <strong>110</strong> applies the identified value of the Width axis to the instance of the variable font having glyphs with weights based on the weights of the glyphs of the input font <strong>116</strong>. Thus, the generated instance of the variable font in this example has glyphs with weights based on weights of glyphs of the input font <strong>116</strong> and also has glyphs with widths based on widths of glyphs of the input font <strong>116</strong>. For example, the generated instance of the variable font has glyphs with the particular weight and the particular width of the glyphs of the input font <strong>116</strong>.</p> <p id="p-0045" num="0044">Continuing this example, the similarity module <strong>110</strong> determines that the variable font also uses the Slant axis. The similarity module <strong>110</strong> processes the input data <strong>114</strong> and determines that the glyphs of the input font <strong>116</strong> have a particular slant. The similarity module <strong>110</strong> also derives a relationship between values of the Slant axis and slants of glyphs of instances of the variable font. For example, the similarity module <strong>110</strong> leverages the relationship between the values of the Slant axis and corresponding slants of glyphs of instances of the variable font to identify a value of the Slant axis corresponding to the particular slant of the glyphs of the input font <strong>116</strong>.</p> <p id="p-0046" num="0045">The similarity module <strong>110</strong> uses the identified value of the Slant axis to generate an instance of the variable font such that the glyphs of the instance of the variable font have the particular slant of the glyphs of the input font <strong>116</strong>. In this example, the similarity module <strong>110</strong> applies this identified value of the Slant axis to the instance of the variable font having glyphs with the weights and widths of the glyphs of the input font <strong>116</strong>. Accordingly, the generated instance of the variable font in this example has glyphs with the weights, widths, and slants of the input font <strong>116</strong>. For example, the glyphs of the generated instance of the variable font have the particular weight, the particular width, and the particular slant of the glyphs of the input font <strong>116</strong>.</p> <p id="p-0047" num="0046">The similarity module <strong>110</strong> determines a similarity score that describes a visual similarity between the input font <strong>116</strong> and the generated instance of the variable font with glyphs having the weights, widths, and slants of the glyphs of the input font <strong>116</strong>. The similarity module <strong>110</strong> uses this similarity score to identify additional design axes of the variable font which are be usable to maximize the similarity score. In one example, the similarity module <strong>110</strong> evaluates the additional design axes of the variable font and selects an additional design axis of the variable font having a highest absolute value of correlation with the similarity score.</p> <p id="p-0048" num="0047">For example, the similarity module <strong>110</strong> uses correlation coefficients such as Pearson product-moment correlation coefficients to identify the additional design axis of the variable font having the highest absolute value of linear correlation with the similarity score. In another example, the similarity module <strong>110</strong> leverages cross-correlation calculations to identify the additional design axis of the variable font having the highest absolute value of correlation with the similarity score. In this manner, the similarity module <strong>110</strong> selects the additional design axis from the additional design axes as having axis values corresponding to visual features of instances of the variable font which are expected to affect the similarity score to a greater degree than axis values of the other additional design axes.</p> <p id="p-0049" num="0048">The similarity module <strong>110</strong> determines a value of the additional design axis which is expected to maximize the similarity score and uses this determined value to generate an instance of the variable font. For example, the similarity module <strong>110</strong> generates the instance of the variable font from the instance of the variable font with glyphs having the weights, widths, and slants of the input font <strong>116</strong>. In one example, the similarity module <strong>110</strong> generates the instance of the variable font as a similar font <strong>118</strong>.</p> <p id="p-0050" num="0049">Glyphs rendered using the similar font <strong>118</strong> are displayed in a user interface <strong>120</strong> of the display device <strong>106</strong> along with glyphs rendered using the input font <strong>116</strong>. The input font <strong>116</strong> is a non-variable font in this example (e.g., Nobel Regular) and the similar font <strong>118</strong> is an instance of a variable font (e.g., Dunbar Series AP). As shown, the glyphs of the similar font <strong>118</strong> are visually similar to the glyphs of the input font <strong>116</strong>. By determining relationships between values of glyph attributes and design axis values in this manner, the similarity module <strong>110</strong> is capable of generating instances of a single variable font which are visually similar to multiple different fonts described by the input data <strong>114</strong>.</p> <p id="p-0051" num="0050"><figref idref="DRAWINGS">FIG. <strong>2</strong></figref> depicts a system <strong>200</strong> in an example implementation showing operation of a similarity module <strong>110</strong>. The similarity module <strong>110</strong> is illustrated to include an attribute module <strong>202</strong>, an axis module <strong>204</strong>, and a modification module <strong>206</strong>. As shown, the attribute module <strong>202</strong> receives the input data <strong>114</strong> and processes the input data <strong>114</strong> to generate attribute data <strong>206</strong>. For example, the input data <strong>114</strong> describes glyphs of an input font and the attribute module <strong>202</strong> generates that attribute data <strong>208</strong> as describing values of attributes of the glyphs of the input font. In this manner, the attribute data <strong>208</strong> describes a weight value, a width value, and/or a slant value of the glyphs of the input font.</p> <p id="p-0052" num="0051"><figref idref="DRAWINGS">FIGS. <strong>3</strong>A, <strong>3</strong>B, and <strong>3</strong>C</figref> illustrate an example of generating an instance of a variable font that is visually similar to an input font. <figref idref="DRAWINGS">FIG. <strong>3</strong>A</figref> illustrates a representation <strong>300</strong> of determining glyph attributes of an input font. <figref idref="DRAWINGS">FIG. <strong>3</strong>B</figref> illustrates a representation <strong>302</strong> of relationships between design axis values and glyph attribute values. <figref idref="DRAWINGS">FIG. <strong>3</strong>C</figref> illustrates a representation <strong>304</strong> of a generating an instance of a variable font that is visually similar to the input font.</p> <p id="p-0053" num="0052">As shown in <figref idref="DRAWINGS">FIG. <strong>3</strong>A</figref>, the representation <strong>300</strong> includes glyphs rendered using an example input font <strong>306</strong>. The attribute module <strong>202</strong> processes the input data <strong>114</strong> to determine attribute values of the glyphs of the example input font <strong>306</strong>. For example, the attribute module <strong>202</strong> determines a weight value <strong>308</strong> based on a thickness of a vertical stem of a glyph of the example input font <strong>306</strong>. The attribute module <strong>202</strong> determines a slant value <strong>310</strong> based on an angle between a vertical stem and a y-axis of a bounding box of a glyph of the example input font <strong>306</strong>. As illustrated, the attribute module <strong>202</strong> determines a width value <strong>312</strong> as a distance between origins of consecutive glyphs of the example input font <strong>306</strong>. In this example, the attribute module <strong>202</strong> generates that attribute data <strong>208</strong> as describing the weight value <strong>308</strong>, the slant value <strong>310</strong>, and/or the width value <strong>312</strong> of the glyphs of the example input font <strong>306</strong>.</p> <p id="p-0054" num="0053">The axis module <strong>204</strong> is illustrated as receiving the attribute data <strong>208</strong>, the variable font data <strong>112</strong>, and/or the input data <strong>114</strong>. The axis module <strong>204</strong> processes the attribute data <strong>208</strong>, the variable font data <strong>112</strong>, and/or the input data <strong>114</strong> to generate custom instance data <strong>210</strong>. In one example, the axis module <strong>204</strong> processes the variable font data <strong>112</strong> to derive relationships between values of attributes of glyphs of a variable font and registered design axis values of the variable font. For example, the axis module <strong>204</strong> determines relationships between values of the attributes of glyphs of the variable font and values of an Italic axis, an Optical Size axis, a Slant axis, a Width axis, and a Weight axis.</p> <p id="p-0055" num="0054">The representation <strong>302</strong> depicted in <figref idref="DRAWINGS">FIG. <strong>3</strong>B</figref> illustrates examples of relationships between attribute values of glyphs and design axis values of variable fonts. In one example, these relationships may be expressed as: <br/> AxisValue=<i>k</i>*GlyphAttribute+<i>C </i> <br/> where: AxisValue is a value of a design axis; GlyphAttribute is a glyph attribute value; and k and C are constants. </p> <p id="p-0056" num="0055">It is to be appreciated that for a single glyph attribute (e.g., weight), the relationship between values of the single glyph attribute and values of the design axis of a variable font can include multiple linear equations with varying k and C constants based on a number of masters included in the variable font. This is illustrated by a first example <strong>314</strong> and a second example <strong>316</strong> of determined relationships between design axis values of the variable font and weight values of glyphs of instances of the variable font. The first example <strong>314</strong> illustrates a single linear relationship between the design axis values and the weight values for a variable font which is interpolated between first and second masters of the variable font (e.g., Thin and Bold). The second example <strong>316</strong> illustrates a relationship between the design axis values and the weight values for a variable font which includes multiple linear relationships. As shown, the second example <strong>316</strong> includes a first linear relationship interpolated between first and second masters (e.g., Thin and Regular) and a second linear relationship interpolated between second and third masters (e.g., Regular and Bold) of the variable font.</p> <p id="p-0057" num="0056">As illustrated in <figref idref="DRAWINGS">FIG. <strong>2</strong></figref>, the axis module <strong>204</strong> generates a first instance of the variable font by leveraging the Weight axis such that glyphs rendered using the first instance of the variable font have the weight value <strong>308</strong> determined from the glyphs of the example input font <strong>306</strong>. The axis module <strong>204</strong> generates a second instance of the variable font by leveraging the first instance of the variable font and the Width axis such that glyphs rendered using the second instance of the variable font have the weight value <strong>308</strong> and the width value <strong>312</strong> determined from the glyphs of the example input font <strong>306</strong>. The axis module <strong>204</strong> generates a third instance of the variable font using the second instance of the variable font and the Slant axis such that glyphs rendered using the third instance of the variable font have the weight value <strong>308</strong>, the width value <strong>312</strong>, and the slant value <strong>310</strong> determined from the glyphs of the example input font <strong>306</strong>. In this example, the axis module generates the custom instance data <strong>210</strong> as describing the third instance of the variable font.</p> <p id="p-0058" num="0057"><figref idref="DRAWINGS">FIG. <strong>3</strong>C</figref> illustrates the representation <strong>304</strong> which includes glyphs rendered using an input font <strong>318</strong>. The attribute module <strong>202</strong> processes the input data <strong>114</strong> and determines attribute values of the glyphs rendered using the input font <strong>318</strong>. The attribute module <strong>202</strong> generates the attribute data <strong>208</strong> as describing the attribute values of the glyphs of the input font <strong>318</strong>. The axis module <strong>204</strong> receives the attribute data <strong>208</strong>, the variable font data <strong>112</strong>, and/or the input data <strong>114</strong> and processes the attribute data <strong>208</strong>, the variable font data <strong>112</strong>, and/or the input data <strong>114</strong> to generate an instance of the variable font <strong>320</strong>.</p> <p id="p-0059" num="0058">As shown, the axis module <strong>204</strong> generates the instance of the variable font <strong>320</strong> as having a same weight value, a same width value, and a same slant value as the glyphs of the input font <strong>318</strong>. In this example, the custom instance data <strong>210</strong> describes the instance of the variable font <strong>320</strong>. As shown in <figref idref="DRAWINGS">FIG. <strong>2</strong></figref>, the modification module <strong>206</strong> receives the custom instance data <strong>210</strong>, the variable font data <strong>112</strong>, and/or the input data <strong>114</strong> as inputs. The modification module <strong>206</strong> processes the custom instance data <strong>210</strong>, the variable font data <strong>112</strong>, and/or the input data <strong>114</strong> and generates an instance of the variable font as a visually similar font <strong>322</strong>.</p> <p id="p-0060" num="0059">To do so, the modification module <strong>206</strong> determines a similarity score between the input font <strong>318</strong> and the instance of the variable font <strong>320</strong>. The modification module <strong>206</strong> uses this similarity score to identify additional design axes of the variable font which are be usable to maximize the similarity score. The modification module <strong>206</strong> identifies an additional design axis from the additional design axes as having a highest absolute value of correlation with the similarity score. For example, the modification module <strong>206</strong> uses correlation coefficients such as Pearson product-moment correlation coefficients to identify the additional design axis of the variable font having a highest absolute value of linear correlation with the similarity score. In an example, the modification module <strong>206</strong> leverages cross-correlation calculations to identify the additional design axis of the variable font having the highest absolute value of correlation with the similarity score.</p> <p id="p-0061" num="0060">In this manner, modification module <strong>206</strong> selects the additional design axis from the additional design axes as having axis values corresponding to visual features of instances of the variable font which are expected to affect the similarity score to a greater degree than axis values of the other additional design axes. The modification module <strong>206</strong> determines a value of the additional design axis which is expected to maximize the similarity score and uses this determined value to generate the visually similar font <strong>322</strong>. For example, the modification module <strong>206</strong> generates visually similar font <strong>322</strong> from the instance of the variable font <strong>320</strong>.</p> <p id="p-0062" num="0061">In order to determine the value of the additional design axis which is expected to maximize the similarity score, the modification module <strong>206</strong> generates an instance of the variable font using a median design axis value of the additional design axis. The modification module <strong>206</strong> computes a similarity score between this generated instance of the variable font and the input font <strong>318</strong>. The modification module <strong>206</strong> then generates an additional instance of the variable font using a design axis value to a right of the median design axis value. For example, the modification module <strong>206</strong> increases the median value of the additional design axis and generates the additional instance of the variable font using the increased value of the additional design axis.</p> <p id="p-0063" num="0062">An additional similarity score is computed between the additional instance of the variable font and the input font <strong>318</strong>. The modification module <strong>206</strong> compares additional similarity score to the previous similarity score. If the additional similarity score is greater than the previous similarity score, then the modification module <strong>206</strong> continues to generate additional instances of the variable font using design axis values further to the right of the median design axis value until a design axis value corresponding to a maximum similarity score is identified. For example, the modification module <strong>206</strong> continues to increase the value of the additional design axis until the design axis value corresponding to the maximum similarity score is identified.</p> <p id="p-0064" num="0063">If the additional similarity score is less than the previous similarity score, then the modification module <strong>206</strong> generates a second additional instance of the variable font using a design axis value to a left of the median design axis value. For example, the modification module <strong>206</strong> decreases the median value of the additional design axis and generates the second additional instance of the variable font using the decreased value of the additional design axis. The modification module <strong>206</strong> then computes a second additional similarity score between the second additional instance of the variable font and the input font <strong>318</strong>. If the second additional similarity score is greater than the previous similarity score, then the modification module <strong>206</strong> continues to generate additional instances of the variable font using design axis values further to the left of the median design axis value until the design axis value corresponding to the maximum similarity score is identified. For example, the modification module <strong>206</strong> continues to decrease the value of the additional design axis until the design axis value corresponding to the maximum similarity score is identified.</p> <p id="p-0065" num="0064">By identifying the design axis value corresponding to the maximum similarity score in this “greedy” approach, the modification module <strong>206</strong> reduces a computational cost to identify the design axis value relative to a “brute force” approach. In one example, this may be represented as: <br/> Cost<sub>BF</sub><i>=O</i>(<i>n</i><sup>m</sup>) <br/> where: Cost<sub>BF </sub>is a computational cost of a “brute force” approach in which a feature vector is generated for each possible unique instance of a variable font to identify a design axis value corresponding to a maximum similarity score that describes a visual similarity between an instance of the variable font and an input font; n is a number of design axes of the variable font; and m is a number of available values of each axis of the design axes of the variable font (e.g., on an average basis). <br/> Cost<sub>G</sub><i>=O</i>(<i>n*m</i>) <br/> where: Cost<sub>G </sub>is a computational cost of a “greedy” approach in which feature vector similarity is used to identify the design axis value corresponding to the maximum similarity score; n is the number of design axes of the variable font; and m is the number of available values of each axis of the design axes of the variable font. </p> <p id="p-0066" num="0065">Continuing the previous example, the modification module <strong>206</strong> identifies multiple additional design axes having high absolute values of correlation with the similarity score. For example, the modification module <strong>206</strong> uses correlation coefficients such as Pearson product-moment correlation coefficients to identify a second additional design axis of the variable font having a next highest absolute value of linear correlation with the similarity score. In order to determine the value of the additional design axis which is expected to maximize the similarity score, the modification module <strong>206</strong> generates an instance of the variable font using a median design axis value of the second additional design axis. The modification module <strong>206</strong> computes a similarity score between the generated instance of the variable font and the input font <strong>318</strong>. As in the previous example, the modification module <strong>206</strong> generates instances of the variable font using design values to a right and/or a left of the median design axis value until the design axis value corresponding to the maximum similarity score is identified.</p> <p id="p-0067" num="0066">The modification module <strong>206</strong> continues to identify additional design axes and determines values of the identified additional design axes which correspond to a maximum similarity score. In an example in which the variable font has many additional design axes, the modification module <strong>206</strong> identifies a subset of the additional design axes for determining values that maximize the similarity score such as subset of design axes used by named or default instances of the variable font. For example, the modification module <strong>206</strong> identifies the subset of the design axes as including design axes determined to have high absolute values of correlation with the similarity score.</p> <p id="p-0068" num="0067">The modification module <strong>206</strong> generates a refined instance of the variable font by determining additional design axes of the variable font as having high absolute values of correlation with a similarity score, and then determining axis values of these design axes which maximize the similarity score. The refined instance of the variable font is generated using these determined axis values. For example, the modification module <strong>206</strong> determines a similarity score between the refined instance of the variable font and the input font <strong>318</strong>. In one example, the modification module <strong>206</strong> generates the refined instance of the variable font as the visually similar font <strong>322</strong>. In another example, the modification module <strong>206</strong> modifies values of the registered design axes of the variable font to improve a visual similarity between the refined instance of the variable font and the input font <strong>318</strong>. In this example, the modification module <strong>206</strong> modifies values of the registered design axes of the variable font to further refine the refined instance of the variable font such as to compensate for added noise. In this manner, the modification module <strong>206</strong> generates the further refined instance of the variable font by modifying a value of the Weight axis, the Width axis, the Slant axis, and so forth. The modification module <strong>206</strong> generates the further refined instance of the variable font as the visually similar font <strong>322</strong> in this example. In one example, the modification module <strong>206</strong> includes an output module to output the visually similar font <strong>322</strong> the user interface <strong>120</strong> such as by rendering the visually similar font <strong>322</strong> in the user interface <strong>120</strong>.</p> <p id="p-0069" num="0068">As illustrated above, the described systems reduce the computational cost to identify the design axis value corresponding to the maximum similarity score from a cost that increases exponentially to a cost that increases multiplicatively. Additionally, the described systems are capable of generating instances of a single variable font which are visually similar to multiple different input fonts. In this manner, the described systems can reduce computing resource consumption by representing multiple different input fonts using instances of a single variable font. For example, a single variable font file is usable to replace font files of multiple input fonts. Thus, a font file repository having many font files of different fonts is replaceable with a repository having a few variable font files and/or a single variable font file.</p> <p id="p-0070" num="0069">In general, functionality, features, and concepts described in relation to the examples above and below may be employed in the context of the example procedures described in this section. Further, functionality, features, and concepts described in relation to different figures and examples in this document may be interchanged among one another and are not limited to implementation in the context of a particular figure or procedure. Moreover, blocks associated with different representative procedures and corresponding figures herein may be applied together and/or combined in different ways. Thus, individual functionality, features, and concepts described in relation to different example environments, devices, components, figures, and procedures herein may be used in any suitable combinations and are not limited to the particular combinations represented by the enumerated examples in this description.</p> <strong class="heading-4">Example Procedures</strong> <p id="p-0071" num="0070">The following discussion describes techniques that may be implemented utilizing the previously described systems and devices. Aspects of each of the procedures may be implemented in hardware, firmware, software, or a combination thereof. The procedures are shown as a set of blocks that specify operations performed by one or more devices and are not necessarily limited to the orders shown for performing the operations by the respective blocks. In portions of the following discussion, reference may be made to <figref idref="DRAWINGS">FIGS. <strong>1</strong>-<strong>3</strong></figref>. <figref idref="DRAWINGS">FIG. <strong>4</strong></figref> is a flow diagram depicting a procedure <strong>400</strong> in an example implementation in which input data describing attribute values of glyphs of an input font is received and an instance of a variable font is generated that is visually similar to the input font.</p> <p id="p-0072" num="0071">Input data describing attribute values of glyphs of an input font is received (block <strong>402</strong>). In one example, the computing device <strong>102</strong> implements the similarity module <strong>110</strong> to receive the input data describing the attribute values of the glyphs of the input font. A custom instance of a variable font is generated by modifying a value of a design axis of the variable font based on the attribute values (block <strong>404</strong>). The similarity module <strong>110</strong> generates the custom instance of the variable font in one example.</p> <p id="p-0073" num="0072">A similarity score describing a visual similarity between the custom instance of the variable font and the input font is determined (block <strong>406</strong>). The computing device <strong>102</strong> implements the similarity module <strong>110</strong> to determine the similarity score. An additional design axis of the variable font is identified based on the similarity score (block <strong>408</strong>). The similarity module <strong>110</strong> identifies the additional design axis as having values which correspond to a high absolute value of correlation with the similarity score one example. An instance of the variable font that is visually similar to the input font is generated by modifying a value of the additional design axis (block <strong>410</strong>). For example, the similarity module <strong>110</strong> generates the instance of the variable font that is visually similar to the input font.</p> <p id="p-0074" num="0073"><figref idref="DRAWINGS">FIG. <strong>5</strong></figref> illustrates an example <strong>500</strong> of generated instances of a variable font that are visually similar to example input fonts. As shown, the example <strong>500</strong> includes glyphs rendered using a first input font <strong>502</strong> and a generated instance of a variable font <strong>504</strong> that is visually similar to the first input font <strong>502</strong>. In this example, the first input font <strong>502</strong> is Gill Sans Light and the generated instance of the variable font <strong>504</strong> is Dunbar Series AP having a weight value of 64 and an xheight value of 454. For example, the similarity module <strong>110</strong> modifies a value of a Weight axis of the variable font based on attributes of glyphs of the input font <strong>502</strong>. The similarity module <strong>110</strong> generates a similarity score between the input font <strong>502</strong> and an instance of the variable font having the modified value of the Weight axis. The similarity module <strong>110</strong> identifies an xHeight axis as having a high absolute correlation with this similarity score and determines the xHeight axis value as maximizing the similarity score. The similarity module <strong>110</strong> generates the instance of the variable font <strong>504</strong> as having the weight value of 64 and the xheight value of 454.</p> <p id="p-0075" num="0074">The example <strong>500</strong> also includes glyphs rendered using a second input font <strong>506</strong> and a generated instance of a variable font <strong>508</strong> that is visually similar to the second input font <strong>506</strong>. For example, the similarity module <strong>110</strong> generates the instance of the variable font <strong>508</strong> based on values of glyph attributes of the second input font <strong>506</strong>. As illustrated, the second input font <strong>506</strong> is Le Havre Regular and the generated instance of the variable font <strong>508</strong> is Dunbar Series AP having a weight value of 98 and an xheight value of 353. Although the first input font <strong>502</strong> and the second input font <strong>506</strong> are not visually similar, the similarity module <strong>110</strong> generates instances of a single variable font (e.g., Dunbar Series AP) that are visually similar to the first input font <strong>502</strong> and the second input font <strong>506</strong>.</p> <p id="p-0076" num="0075">As shown, the example <strong>500</strong> includes glyphs rendered using a third input font <strong>510</strong>, a generated instance of a variable font <strong>512</strong> that is visually similar to the third input font <strong>510</strong>, glyphs rendered using a fourth input font <strong>514</strong>, a generated instance of a variable font <strong>516</strong> that is visually similar to the fourth input font <strong>514</strong>, glyphs rendered using a fifth input font <strong>518</strong>, and a generated instance of a variable font <strong>520</strong> that is visually similar to the fifth input font <strong>518</strong>. For example, the third input font <strong>510</strong> is Nobel Regular and the generated instance of the variable font <strong>512</strong> is Dunbar Series AP having a weight value of 109 and an xheight value of 417. The fourth input font <strong>514</strong> is Alwyn Thin and the generated instance of the variable font <strong>516</strong> that is visually similar to the forth input font <strong>514</strong> is Dunbar Series AP having a weight value of 51 and an xheight value of 483. As illustrated, the fifth input font <strong>518</strong> is Trebuchet MS Regular and the generated instance of the variable font is Dunbar Series AP having a weight value of 91 and an xheight value of 516.</p> <p id="p-0077" num="0076">Accordingly, the similarity module <strong>110</strong> is capable of generating instances of a single variable font (e.g., Dunbar Series AP) which are visually similar to a variety of other fonts (e.g., Gill Sans Light, Le Havre Regular, Nobel Regular, Alwyn Thin, and Trebuchet MS Regular). In the illustrated example, the similarity module <strong>110</strong> generates instances of the single variable font by modifying values of two design axes (e.g., weight and xheight). The similarity module <strong>110</strong> can also generate instances of a variable font by modifying values of a single design axis or a plurality of additional design axes. For example, the similarity module <strong>110</strong> generates instances of a variable font by modifying values of registered design axes (e.g., Italic, Optical Size, Slant, Width, and/or Weight) and/or unregistered design axes (e.g., non-standard, unregistered, and/or custom).</p> <p id="p-0078" num="0077">In another example, the similarity module <strong>110</strong> prioritizes an order of design axes for modification such that a value of a first design axis is modified before a value of a second design axis is modified. In this example, the similarity module <strong>110</strong> prioritizes the order of design axes for modification such that the values of the first and second design axes are modified before a value of a third design axis is modified. For example, the similarity module <strong>110</strong> prioritizes an order of registered design axes such that a value of a Weight axis is determined, then a value of a Width axis is determined second, and then a value of a Slant axis is determined. Accordingly, the similarity module <strong>110</strong> is capable of generating instances of variable fonts which are visually similar to many other fonts having a variety of visual features.</p> <p id="p-0079" num="0078"><figref idref="DRAWINGS">FIG. <strong>6</strong></figref> is a flow diagram depicting a procedure <strong>600</strong> in an example implementation in which a digital image depicting glyphs rendered using an input font is received and an instance of a variable font is generated that is visually similar to the input font. A digital image depicting glyphs rendered using an input font is received (block <strong>602</strong>). The computing device <strong>102</strong> implements the similarity module <strong>110</strong> to receive the digital image in one example. Attribute values of the glyphs depicted in the digital image are determined (block <strong>604</strong>). The similarity module <strong>110</strong> determines the attribute values of the glyphs depicted in the digital image.</p> <p id="p-0080" num="0079">A custom instance of a variable font is generated by modifying a value of a design axis of the variable font based on the attribute values (block <strong>606</strong>). For example, the design axis is a registered design axis of the variable font. In one example, the computing device <strong>102</strong> implements the similarity module <strong>110</strong> to generate the custom instance of the variable font. A similarity score indicating a visual similarity between the custom instance of the variable font and the input font is determined (block <strong>608</strong>). For example, the similarity module <strong>110</strong> determines the similarity score.</p> <p id="p-0081" num="0080">An additional design axis of the variable font is identified based on the similarity score (block <strong>610</strong>). The computing device <strong>102</strong> implements the similarity module <strong>110</strong> to identify the additional design axis in an example. An instance of the variable font is generated that is visually similar to the input font by modifying a value of the additional design axis (block <strong>612</strong>). For example, the similarity module <strong>110</strong> generates the instance of the variable font that is visually similar to the input font.</p> <p id="p-0082" num="0081"><figref idref="DRAWINGS">FIG. <strong>7</strong></figref> illustrates an example <strong>700</strong> of a user interface <strong>702</strong> in which instances of variable fonts are identified as being visually similar to an input font <strong>704</strong>. As shown in the example <strong>700</strong>, glyphs of the input font <strong>704</strong> are rendered in the user interface <strong>702</strong>. An indication of a similar font <strong>706</strong> is displayed in a menu of the user interface <strong>702</strong> which identifies the similar font as being visually similar to the input font <strong>704</strong>. An indication of an instance of a variable font <strong>708</strong> is also displayed in the menu of the user interface <strong>702</strong> which identifies the instance of the variable font as being visually similar to the input font <strong>704</strong>. In this example, the instance of the variable font is usable in place of the similar font or in addition to the similar font.</p> <p id="p-0083" num="0082">As illustrated in the example <strong>700</strong>, instances of variable fonts are displayed as visually similar fonts to a particular font. The particular font can be a variable font or a non-variable font. As shown, an instance of a locally available variable font is used render glyphs that are visually similar to glyphs rendered using the particular font, for example, if another font that is visually similar to the particular font is not available locally to the computing device <strong>102</strong>. For example, instances of variable fonts are associated with other fonts as being visually similar to the other fonts. These instances of variable fonts are usable in addition to the other fonts, in place of the other fonts, and so forth.</p> <strong class="heading-4">Example System and Device</strong> <p id="p-0084" num="0083"><figref idref="DRAWINGS">FIG. <strong>8</strong></figref> illustrates an example system <strong>800</strong> that includes an example computing device that is representative of one or more computing systems and/or devices that may implement the various techniques described herein. This is illustrated through inclusion of the similarity module <strong>110</strong>. The computing device <strong>802</strong> may be, for example, a server of a service provider, a device associated with a client (e.g., a client device), an on-chip system, and/or any other suitable computing device or computing system.</p> <p id="p-0085" num="0084">The example computing device <strong>802</strong> as illustrated includes a processing system <strong>804</strong>, one or more computer-readable media <strong>806</strong>, and one or more I/O interfaces <strong>808</strong> that are communicatively coupled, one to another. Although not shown, the computing device <strong>802</strong> may further include a system bus or other data and command transfer system that couples the various components, one to another. A system bus can include any one or combination of different bus structures, such as a memory bus or memory controller, a peripheral bus, a universal serial bus, and/or a processor or local bus that utilizes any of a variety of bus architectures. A variety of other examples are also contemplated, such as control and data lines.</p> <p id="p-0086" num="0085">The processing system <strong>804</strong> is representative of functionality to perform one or more operations using hardware. Accordingly, the processing system <strong>804</strong> is illustrated as including hardware elements <strong>810</strong> that may be configured as processors, functional blocks, and so forth. This may include implementation in hardware as an application specific integrated circuit or other logic device formed using one or more semiconductors. The hardware elements <strong>810</strong> are not limited by the materials from which they are formed or the processing mechanisms employed therein. For example, processors may be comprised of semiconductor(s) and/or transistors (e.g., electronic integrated circuits (ICs)). In such a context, processor-executable instructions may be electronically-executable instructions.</p> <p id="p-0087" num="0086">The computer-readable media <strong>806</strong> is illustrated as including memory/storage <strong>812</strong>. The memory/storage <strong>812</strong> represents memory/storage capacity associated with one or more computer-readable media. The memory/storage component <strong>812</strong> may include volatile media (such as random access memory (RAM)) and/or nonvolatile media (such as read only memory (ROM), Flash memory, optical disks, magnetic disks, and so forth). The memory/storage component <strong>812</strong> may include fixed media (e.g., RAM, ROM, a fixed hard drive, and so on) as well as removable media (e.g., Flash memory, a removable hard drive, an optical disc, and so forth). The computer-readable media <strong>806</strong> may be configured in a variety of other ways as further described below.</p> <p id="p-0088" num="0087">Input/output interface(s) <strong>808</strong> are representative of functionality to allow a user to enter commands and information to computing device <strong>802</strong>, and also allow information to be presented to the user and/or other components or devices using various input/output devices. Examples of input devices include a keyboard, a cursor control device (e.g., a mouse), a microphone, a scanner, touch functionality (e.g., capacitive or other sensors that are configured to detect physical touch), a camera (e.g., which may employ visible or non-visible wavelengths such as infrared frequencies to recognize movement as gestures that do not involve touch), and so forth. Examples of output devices include a display device (e.g., a monitor or projector), speakers, a printer, a network card, tactile-response device, and so forth. Thus, the computing device <strong>802</strong> may be configured in a variety of ways as further described below to support user interaction.</p> <p id="p-0089" num="0088">Various techniques may be described herein in the general context of software, hardware elements, or program modules. Generally, such modules include routines, programs, objects, elements, components, data structures, and so forth that perform particular tasks or implement particular abstract data types. The terms “module,” “functionality,” and “component” as used herein generally represent software, firmware, hardware, or a combination thereof. The features of the techniques described herein are platform-independent, meaning that the techniques may be implemented on a variety of commercial computing platforms having a variety of processors.</p> <p id="p-0090" num="0089">An implementation of the described modules and techniques may be stored on or transmitted across some form of computer-readable media. The computer-readable media may include a variety of media that may be accessed by the computing device <strong>802</strong>. By way of example, and not limitation, computer-readable media may include “computer-readable storage media” and “computer-readable signal media.”</p> <p id="p-0091" num="0090">“Computer-readable storage media” may refer to media and/or devices that enable persistent and/or non-transitory storage of information in contrast to mere signal transmission, carrier waves, or signals per se. Thus, computer-readable storage media refers to non-signal bearing media. The computer-readable storage media includes hardware such as volatile and non-volatile, removable and non-removable media and/or storage devices implemented in a method or technology suitable for storage of information such as computer readable instructions, data structures, program modules, logic elements/circuits, or other data. Examples of computer-readable storage media may include, but are not limited to, RAM, ROM, EEPROM, flash memory or other memory technology, CD-ROM, digital versatile disks (DVD) or other optical storage, hard disks, magnetic cassettes, magnetic tape, magnetic disk storage or other magnetic storage devices, or other storage device, tangible media, or article of manufacture suitable to store the desired information and which may be accessed by a computer.</p> <p id="p-0092" num="0091">“Computer-readable signal media” may refer to a signal-bearing medium that is configured to transmit instructions to the hardware of the computing device <strong>802</strong>, such as via a network. Signal media typically may embody computer readable instructions, data structures, program modules, or other data in a modulated data signal, such as carrier waves, data signals, or other transport mechanism. Signal media also include any information delivery media. The term “modulated data signal” means a signal that has one or more of its characteristics set or changed in such a manner as to encode information in the signal. By way of example, and not limitation, communication media include wired media such as a wired network or direct-wired connection, and wireless media such as acoustic, RF, infrared, and other wireless media.</p> <p id="p-0093" num="0092">As previously described, hardware elements <strong>810</strong> and computer-readable media <strong>806</strong> are representative of modules, programmable device logic and/or fixed device logic implemented in a hardware form that may be employed in some embodiments to implement at least some aspects of the techniques described herein, such as to perform one or more instructions. Hardware may include components of an integrated circuit or on-chip system, an application-specific integrated circuit (ASIC), a field-programmable gate array (FPGA), a complex programmable logic device (CPLD), and other implementations in silicon or other hardware. In this context, hardware may operate as a processing device that performs program tasks defined by instructions and/or logic embodied by the hardware as well as a hardware utilized to store instructions for execution, e.g., the computer-readable storage media described previously.</p> <p id="p-0094" num="0093">Combinations of the foregoing may also be employed to implement various techniques described herein. Accordingly, software, hardware, or executable modules may be implemented as one or more instructions and/or logic embodied on some form of computer-readable storage media and/or by one or more hardware elements <strong>810</strong>. The computing device <strong>802</strong> may be configured to implement particular instructions and/or functions corresponding to the software and/or hardware modules. Accordingly, implementation of a module that is executable by the computing device <strong>802</strong> as software may be achieved at least partially in hardware, e.g., through use of computer-readable storage media and/or hardware elements <strong>810</strong> of the processing system <strong>804</strong>. The instructions and/or functions may be executable/operable by one or more articles of manufacture (for example, one or more computing devices <strong>802</strong> and/or processing systems <strong>804</strong>) to implement techniques, modules, and examples described herein.</p> <p id="p-0095" num="0094">The techniques described herein may be supported by various configurations of the computing device <strong>802</strong> and are not limited to the specific examples of the techniques described herein. This functionality may also be implemented all or in part through use of a distributed system, such as over a “cloud” <strong>814</strong> as described below.</p> <p id="p-0096" num="0095">The cloud <strong>814</strong> includes and/or is representative of a platform <strong>816</strong> for resources <strong>818</strong>. The platform <strong>816</strong> abstracts underlying functionality of hardware (e.g., servers) and software resources of the cloud <strong>814</strong>. The resources <strong>818</strong> may include applications and/or data that can be utilized while computer processing is executed on servers that are remote from the computing device <strong>802</strong>. Resources <strong>818</strong> can also include services provided over the Internet and/or through a subscriber network, such as a cellular or Wi-Fi network.</p> <p id="p-0097" num="0096">The platform <strong>816</strong> may abstract resources <strong>818</strong> and functions to connect the computing device <strong>802</strong> with other computing devices. The platform may also serve to abstract scaling of resources to provide a corresponding level of scale to encountered demand for the resources that are implemented via the platform. Accordingly, in an interconnected device embodiment, implementation of functionality described herein may be distributed throughout the system <strong>800</strong>. For example, the functionality may be implemented in part on the computing device <strong>802</strong> as well as via the platform <strong>816</strong> that abstracts the functionality of the cloud <strong>814</strong>.</p> <strong class="heading-4">CONCLUSION</strong> <p id="p-0098" num="0097">Although implementations of systems for generating instances of variable fonts have been described in language specific to structural features and/or methods, it is to be understood that the appended claims are not necessarily limited to the specific features or methods described. Rather, the specific features and methods are disclosed as example implementations of systems for generating instances of variable fonts, and other equivalent features and methods are intended to be within the scope of the appended claims. Further, various different examples are described and it is to be appreciated that each described example can be implemented independently or in connection with one or more other described examples.</p> 
+		</div>
+	</div>
+                <div id="claims" class="wrapper">
+        <div class="title-wrapper">
+            <h2 class="heading-2">Claims</h2>
+        </div>
+        <div class="wrap">
+                            <div class="claim">
+                    <p>1. A method comprising:</p><dl><dd>receiving, by a processing device, input data describing glyphs rendered using an input font;</dd></dl><dl><dd>applying, by the processing device, a value to a design axis of a variable font based on an attribute value of the glyphs rendered using the input font;</dd></dl><dl><dd>generating, by the processing device, an instance of the variable font by applying an additional value to an additional design axis of the variable font based on similarity score computed using a feature vector describing a visual appearance of the input font; and</dd></dl><dl><dd>rendering, by the processing device for display in a user interface, glyphs using the instance of the variable font that are visually similar to the glyphs rendered using the input font.</dd></dl>
+                </div>
+                            <div class="claim">
+                    <p>2. The method as described in claim 1, further comprising identifying the value based on a relationship between values of the design axis of the variable font and attribute values of glyphs rendered using instances of the variable font.</p>
+                </div>
+                            <div class="claim">
+                    <p>3. The method as described in claim 2, wherein the relationship includes multiple linear relationships.</p>
+                </div>
+                            <div class="claim">
+                    <p>4. The method as described in claim 3, wherein the multiple linear relationships are interpolated between masters of the variable font.</p>
+                </div>
+                            <div class="claim">
+                    <p>5. The method as described in claim 1, wherein the input font is a non-variable font.</p>
+                </div>
+                            <div class="claim">
+                    <p>6. The method as described in claim 1, wherein the input font is an additional variable font.</p>
+                </div>
+                            <div class="claim">
+                    <p>7. The method as described in claim 1, wherein the attribute value is determined based on a thickness of a vertical stem of a glyph of the glyphs rendered using the input font.</p>
+                </div>
+                            <div class="claim">
+                    <p>8. The method as described in claim 1, wherein the attribute value is determined based on an angle between a vertical stem and a y-axis of a bounding box of a glyph of the glyphs rendered using the input font.</p>
+                </div>
+                            <div class="claim">
+                    <p>9. The method as described in claim 1, wherein the attribute value is determined based on a distance between origins of consecutive glyphs of the glyphs rendered using the input font.</p>
+                </div>
+                            <div class="claim">
+                    <p>10. A non-transitory computer-readable storage medium storing executable instructions, which when executed by a processing device, cause the processing device to perform operations comprising:</p><dl><dd>receiving input data describing an electronic document having glyphs rendered using an input font;</dd></dl><dl><dd>generating a first instance of a variable font based on the input data;</dd></dl><dl><dd>determining a similarity score indicating a visual similarity between the first instance of the variable font and the input font based on a feature vector describing a visual appearance of the input font;</dd></dl><dl><dd>identifying a design axis of the variable font based on the similarity score;</dd></dl><dl><dd>generating a second instance of the variable font by applying a value to the design axis; and</dd></dl><dl><dd>rendering, for display in a user interface, glyphs using the second instance of the variable font that are visually similar to the glyphs rendered using the input font.</dd></dl>
+                </div>
+                            <div class="claim">
+                    <p>11. The non-transitory computer-readable storage medium as described in claim 10, wherein the input font is an additional variable font.</p>
+                </div>
+                            <div class="claim">
+                    <p>12. The non-transitory computer-readable storage medium as described in claim 10, wherein the input font is a non-variable font.</p>
+                </div>
+                            <div class="claim">
+                    <p>13. The non-transitory computer-readable storage medium as described in claim 10, wherein the operations further include identifying the value based on a relationship between values of the design axis of the variable font and attribute values of glyphs rendered using instances of the variable font.</p>
+                </div>
+                            <div class="claim">
+                    <p>14. The non-transitory computer-readable storage medium as described in claim 13, wherein the relationship includes multiple linear relationships.</p>
+                </div>
+                            <div class="claim">
+                    <p>15. The non-transitory computer-readable storage medium as described in claim 14, wherein the multiple linear relationships are interpolated between masters of the variable font.</p>
+                </div>
+                            <div class="claim">
+                    <p>16. A system comprising:</p><dl><dd>means for receiving input data describing glyphs rendered using an input font;</dd></dl><dl><dd>means for applying a value to a design axis of a variable font based on an attribute value of the glyphs rendered using the input font;</dd></dl><dl><dd>means for generating an instance of the variable font by applying and additional value to an additional design axis of the variable font based on a feature vector describing a visual appearance of the input font; and</dd></dl><dl><dd>means for rendering, for display in a user interface, glyphs using the instance of the variable font that are visually similar to the glyphs rendered using the input font.</dd></dl>
+                </div>
+                            <div class="claim">
+                    <p>17. The system as described in claim 16, wherein the attribute value is determined based on a distance between origins of consecutive glyphs of the glyphs rendered using the input font.</p>
+                </div>
+                            <div class="claim">
+                    <p>18. The system as described in claim 16, wherein the attribute value is determined based on an angle between a vertical stem and a y-axis of a bounding box of a glyph of the glyphs rendered using the input font.</p>
+                </div>
+                            <div class="claim">
+                    <p>19. The system as described in claim 16, wherein the attribute value is determined based on a thickness of a vertical stem of a glyph of the glyphs rendered using the input font.</p>
+                </div>
+                            <div class="claim">
+                    <p>20. The system as described in claim 16, wherein the input font is a non-variable font.</p>
+                </div>
+                    </div>
+    </div>
+                <div id="citations" class="wrapper">
+        <div class="title-wrapper">
+            <strong class="heading-2">Referenced Cited</strong>
+        </div>
+        <div class="wrap">
+                                        <strong class="heading-4">U.S. Patent Documents</strong>
+<div class="wrap block">
+    <table id="us-citations" class="zebra -zb table-full-width">
+        <tbody class="table-bordered">
+                          <tr class="zebra -zb table-padding-full">
+                  <td class="number">
+                                            <a href="/patent/5859648">5859648</a>
+                                      </td>
+                  <td class="date">
+                                                January 12, 1999
+                                        </td>
+                  <td class="inventor">
+                                                Moore et al.
+                                        </td>
+                                                  </tr>
+                          <tr class="zebra -zb table-padding-full">
+                  <td class="number">
+                                            <a href="/patent/6678410">6678410</a>
+                                      </td>
+                  <td class="date">
+                                                January 13, 2004
+                                        </td>
+                  <td class="inventor">
+                                                Phinney et al.
+                                        </td>
+                                                  </tr>
+                          <tr class="zebra -zb table-padding-full">
+                  <td class="number">
+                                            <a href="/patent/8718367">8718367</a>
+                                      </td>
+                  <td class="date">
+                                                May 6, 2014
+                                        </td>
+                  <td class="inventor">
+                                                Schneider et al.
+                                        </td>
+                                                  </tr>
+                          <tr class="zebra -zb table-padding-full">
+                  <td class="number">
+                                            <a href="/patent/11210450">11210450</a>
+                                      </td>
+                  <td class="date">
+                                                December 28, 2021
+                                        </td>
+                  <td class="inventor">
+                                                Dhanuka et al.
+                                        </td>
+                                                  </tr>
+                          <tr class="zebra -zb table-padding-full">
+                  <td class="number">
+                                            <a href="/patent/20160292275">20160292275</a>
+                                      </td>
+                  <td class="date">
+                                                October 6, 2016
+                                        </td>
+                  <td class="inventor">
+                                                Talton et al.
+                                        </td>
+                                                  </tr>
+                          <tr class="zebra -zb table-padding-full">
+                  <td class="number">
+                                            <a href="/patent/20170098138">20170098138</a>
+                                      </td>
+                  <td class="date">
+                                                April 6, 2017
+                                        </td>
+                  <td class="inventor">
+                                                Wang
+                                        </td>
+                                                  </tr>
+                          <tr class="zebra -zb table-padding-full">
+                  <td class="number">
+                                            <a href="/patent/20170249292">20170249292</a>
+                                      </td>
+                  <td class="date">
+                                                August 31, 2017
+                                        </td>
+                  <td class="inventor">
+                                                Constable et al.
+                                        </td>
+                                                  </tr>
+                          <tr class="zebra -zb table-padding-full">
+                  <td class="number">
+                                            <a href="/patent/20170262414">20170262414</a>
+                                      </td>
+                  <td class="date">
+                                                September 14, 2017
+                                        </td>
+                  <td class="inventor">
+                                                Pao et al.
+                                        </td>
+                                                  </tr>
+                          <tr class="zebra -zb table-padding-full">
+                  <td class="number">
+                                            <a href="/patent/20180089151">20180089151</a>
+                                      </td>
+                  <td class="date">
+                                                March 29, 2018
+                                        </td>
+                  <td class="inventor">
+                                                Wang
+                                        </td>
+                                                  </tr>
+                          <tr class="zebra -zb table-padding-full">
+                  <td class="number">
+                                            <a href="/patent/20190108203">20190108203</a>
+                                      </td>
+                  <td class="date">
+                                                April 11, 2019
+                                        </td>
+                  <td class="inventor">
+                                                Wang
+                                        </td>
+                                                  </tr>
+                          <tr class="zebra -zb table-padding-full">
+                  <td class="number">
+                                            <a href="/patent/20190130232">20190130232</a>
+                                      </td>
+                  <td class="date">
+                                                May 2, 2019
+                                        </td>
+                  <td class="inventor">
+                                                Kaasila
+                                        </td>
+                                                  </tr>
+                          <tr class="zebra -zb table-padding-full">
+                  <td class="number">
+                                            <a href="/patent/20190325626">20190325626</a>
+                                      </td>
+                  <td class="date">
+                                                October 24, 2019
+                                        </td>
+                  <td class="inventor">
+                                                Tao
+                                        </td>
+                                                  </tr>
+                          <tr class="zebra -zb table-padding-full">
+                  <td class="number">
+                                            <a href="/patent/20190385346">20190385346</a>
+                                      </td>
+                  <td class="date">
+                                                December 19, 2019
+                                        </td>
+                  <td class="inventor">
+                                                Fisher
+                                        </td>
+                                                  </tr>
+                          <tr class="zebra -zb table-padding-full">
+                  <td class="number">
+                                            <a href="/patent/20200066016">20200066016</a>
+                                      </td>
+                  <td class="date">
+                                                February 27, 2020
+                                        </td>
+                  <td class="inventor">
+                                                Wang
+                                        </td>
+                                                  </tr>
+                          <tr class="zebra -zb table-padding-full">
+                  <td class="number">
+                                            <a href="/patent/20210334666">20210334666</a>
+                                      </td>
+                  <td class="date">
+                                                October 28, 2021
+                                        </td>
+                  <td class="inventor">
+                                                Lundin
+                                        </td>
+                                                  </tr>
+                    </tbody>
+    </table>
+</div>
+                                                                            <strong class="heading-4">Other references</strong>
+                <ul>
+                                            <li>“Non-Final Office Action”, U.S. Appl. No. 16/942,286, dated Mar. 30, 2021, 11 pages.</li>
+                                            <li>“Notice of Allowance”, U.S. Appl. No. 16/942,286, dated Aug. 18, 2021, 5 pages.</li>
+                                            <li>“Pearson correlation coefficient—Wikipedia”, Retrieved at: https://en.wikipedia.org/wiki/Pearson_correlation_coefficient—on May 28, 2020, 14 pages.</li>
+                                            <li>O'Donovan, Peter et al., “Exploratory Font Selection Using Crowdsourced Attributes”, ACM Transactions on Graphics, Jul. 27, 2014, 9 pages.</li>
+                                            <li>Wang, Zhangyang et al., “DeepFont: Identify Your Font from An Image”, Proceedings of the 23rd ACM international conference on Multimedia (MM '15). Association for Computing Machinery, New York, NY [retrieved Oct. 13, 2020]. Retrieved from the Internet &lt;https://arxiv.org/pdf/1507.03196.pdf&gt;., Jul. 12, 2015, 9 pages.</li>
+                                    </ul>
+                    </div>
+    </div>
+            <div id="history" class="wrapper">
+    <div class="title-wrapper">
+        <strong class="heading-2">Patent History</strong>
+    </div>
+    <div class="wrap">
+                                    <strong>Patent number</strong>: 11663394<br>
+                    
+        <strong>Type: </strong>
+                    Grant
+          
+        <br>
+
+                    <strong>Filed</strong>: Nov 21, 2021<br>
+        
+                                    <strong>Date of Patent</strong>: May 30, 2023<br>
+                    
+                                    <strong>Patent Publication Number</strong>: <a href="/patent/20220075926">20220075926</a><br>
+                    
+                                    <strong>Assignee</strong>: 
+                        
+                            <a href="/assignee/adobe-inc">Adobe Inc.</a>
+                 
+                    (San Jose, CA)
+            <br>
+            
+
+                    <strong>Inventors</strong>: 
+                            <a href="/inventor/praveen-kumar-dhanuka">Praveen Kumar Dhanuka</a>
+                 
+                    (Howrah), 
+                            <a href="/inventor/nirmal-kumawat">Nirmal Kumawat</a>
+                 
+                    (Rajsamand), 
+                            <a href="/inventor/arushi-jain">Arushi Jain</a>
+                 
+                    (Ashok Vihar)
+            <br>
+        
+                                                <strong>Primary Examiner</strong>: <a href="/examiner/jeffrey-j-chow">Jeffrey J Chow</a>
+                <br>
+            
+                
+                    
+          
+
+                    <strong>Application Number</strong>: 17/531,758<br>
+            </div>
+</div>
+                <div id="classifications" class="wrapper">
+        <div class="title-wrapper">
+            <strong class="heading-2">Classifications</strong>
+        </div>
+        <div class="wrap">
+
+    <strong>Current U.S. Class</strong>: 
+                        <strong>
+                            Non/e
+                            </strong>
+                <br>    
+    
+    <strong>International Classification</strong>: 
+            G06F 40/109 (20200101);
+            G06T 11/20 (20060101);
+        <br>    
+
+       </div>
+    </div>
+        </div>
+    </div>
+                    </div>
+                                                        </div>
+                                    <div class="sidebar primary-sidebar">
+                        <aside
+                            data-directive="j-lead"
+                            data-type="cornell"
+                            data-impression="0">
+                        </aside>
+                        <aside class="jlead-v2-wrapper jcard -loading" data-directive="j-dynamic-lead" data-lead-id="146">
+    <div class="jspinner -double-bounce"><div class="-crl -crl1 bg-justia-blue"></div><div class="-crl -crl2 bg-justia-blue"></div></div>
+</aside>
+                        <aside id="ask-a-lawyer-widget" class="jcard has-padding-content-block-30 block">
+    <p class="heading-4">
+        <a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Sidebar" data-gtm-label="All - Ask a Lawyer" href="https://answers.justia.com/">Ask a Lawyer</a>
+    </p>
+    <div class="content">
+        <div class="block-wrapper small-font" data-directive="j-ask-a-lawyer">
+            <form data-gtm-type="submission" data-gtm-label="Ask a Lawyer" data-gtm-category="Widgets" name="ask-a-lawyer-form" method="post" action="https://answers.justia.com/ask" id="homepage-ask" accept-charset="utf-8">
+                <div class="jfld-group">
+                    <strong>Question:</strong>
+                    <textarea name="question" class="jfld-block" id="ask-a-lawyer-textarea" rows="5" title="Please ask your question here and get free answers from lawyers." placeholder="Please ask your question here and get free answers from lawyers."></textarea>
+                </div>
+                <span class="block">
+                    <a id="answers-add-details">Add details</a>
+                    <div class="pull-right" id="char-court">120</div>
+                </span>
+                <div class="question-details clear-both hidden-content" id="question-details">
+                    <div class="jfld-group">
+                        <strong>Additional Details: </strong>
+                        <textarea name="details" id="ask-a-lawyer-details-textarea" rows="5" class="jfld-block" title="If you have additional details about your question fill them here" placeholder="If you have additional details about your question fill them here"></textarea>
+                    </div>
+                    <span class="block">
+                        <div class="pull-right" id="char-court-details">
+                            1000
+                        </div>
+                    </span>
+                </div>
+                <button type="submit" name="submit" class="pull-right button button-primary uppercase">
+                    Ask Question
+                </button>
+            </form>
+        </div>
+    </div>
+</aside>
+                        <aside class="jcard jlead-v2-wrapper -loading" data-directive="j-dynamic-lead" data-property="patents">
+    <div class="jspinner -double-bounce">
+        <div class="-crl -crl1 bg-justia-blue"></div>
+        <div class="-crl -crl2 bg-justia-blue"></div>
+    </div>
+</aside>
+                        <aside class="jcard has-padding-content-block-30 block">
+    <p class="heading-4">
+        <a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Sidebar" data-gtm-label="All - Find a Lawyer" href="//www.justia.com/lawyers/patents/locate" id="findalawyerlink">Find a Lawyer</a>
+    </p>
+    <div class="block-wrapper">
+        <form data-gtm-type="submission" data-gtm-label="Find a Lawyer" data-gtm-category="Widgets" class="jform small-font jform--find-lawyer" name="find-a-lawyer-form" action="//lawyers.justia.com/search" method="get" accept-charset="utf-8">
+            <div class="jfld-group">
+                <input type="text" name="query" value="Patents" class="jfld-block" id="lawyer_practice_field" title="Legal Issue or Lawyer Name" placeholder="Legal Issue or Lawyer Name"/>
+            </div>
+            <div class="jfld-group -side-button clearfix">
+                <input type="text" name="location" id="lawyer-location" title="City, State" placeholder="City, State" />
+                <input type="submit" value="Search" class="button button-primary search uppercase" />
+            </div>
+        </form>
+        <div class="text-center clear-both">
+            <strong class="heading-6 has-no-bottom-margin">
+                <a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Sidebar" data-gtm-label="All - Lawyers - Get Listed Now!" href="https://lawyers.justia.com/lawyer-directory-listings" class="button button-red-ghost">Lawyers - Get Listed Now!</a>
+            </strong>
+            <span class="tiny-font">Get a free directory profile listing</span>
+        </div>
+    </div>
+</aside>
+                        <aside data-directive="j-find-a-lawyer" data-practice="patents" data-level="300"></aside>
+                    </div>
+                            </div>
+        </div>
+        <div id="footer" class="-v2 short bg-white color-black">
+            <div class="wrapper has-no-padding">
+                <div class="resources font-opensans has-padding-content-block-x2large clearfix">
+                    <div class="section-title">Justia Legal Resources</div>
+                    <div class="columns">
+                        <div class="footer-block">
+                            <div class="title">
+                                <a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Find a Lawyer" href="https://www.justia.com/lawyers">Find a Lawyer</a>
+                                <span class="expand" data-directive="j-expand" data-section="footer-01">
+                                    <img src="https://justatic.com/v/20231003111152/shared/images/icons/svgfiles/blue/down.svg" alt="Arrow">
+                                </span>
+                            </div>
+                            <ul id="footer-01" class="footer-list -collapsed">
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Bankruptcy Lawyers" href="https://www.justia.com/lawyers/bankruptcy">Bankruptcy Lawyers</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Business Lawyers" href="https://www.justia.com/lawyers/business-law">Business Lawyers</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Criminal Lawyers" href="https://www.justia.com/lawyers/criminal-law">Criminal Lawyers</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Employment Lawyers" href="https://www.justia.com/lawyers/employment-law">Employment Lawyers</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Estate Planning Lawyers" href="https://www.justia.com/lawyers/estate-planning">Estate Planning Lawyers</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Family Lawyers" href="https://www.justia.com/lawyers/family-law">Family Lawyers</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Personal Injury Lawyers" href="https://www.justia.com/lawyers/personal-injury">Personal Injury Lawyers</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Find a Lawyer - More" href="https://www.justia.com/lawyers">More... </a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-block">
+                            <div class="title">
+                                <a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Individuals" href="https://www.justia.com/individuals/">Individuals</a>
+                                <span class="expand" data-directive="j-expand" data-section="footer-02">
+                                    <img src="https://justatic.com/v/20231003111152/shared/images/icons/svgfiles/blue/down.svg" alt="Arrow">
+                                </span>
+                            </div>
+                            <ul id="footer-02" class="footer-list -collapsed">
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Bankruptcy" href="https://www.justia.com/bankruptcy/">Bankruptcy</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Criminal" href="https://www.justia.com/criminal/">Criminal</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Divorce" href="https://www.justia.com/family/divorce/">Divorce</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="DUI" href="https://www.justia.com/criminal/drunk-driving-dui-dwi/">DUI</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Estate Planning" href="https://www.justia.com/estate-planning/">Estate Planning</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Family Law" href="https://www.justia.com/family/">Family Law</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Personal Injury" href="https://www.justia.com/injury/">Personal Injury</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Individuals - More" href="https://www.justia.com/individuals/">More...</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-block">
+                            <div class="title">
+                                <a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Business" href="https://www.justia.com/business/">Business</a>
+                                <span class="expand" data-directive="j-expand" data-section="footer-03">
+                                    <img src="https://justatic.com/v/20231003111152/shared/images/icons/svgfiles/blue/down.svg" alt="Arrow">
+                                </span>
+                            </div>
+                            <ul id="footer-03" class="footer-list -collapsed">
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Business Formation" href="https://www.justia.com/business-operations/starting-your-own-business/">Business Formation</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Business Operations" href="https://www.justia.com/business-operations/">Business Operations</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Employment" href="https://www.justia.com/employment/">Employment</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Intellectual Property" href="https://www.justia.com/intellectual-property/">Intellectual Property</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="International Trade" href="https://www.justia.com/international-law/international-trade-law/">International Trade</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Real Estate" href="https://www.justia.com/real-estate/">Real Estate</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Tax Law" href="https://www.justia.com/tax/">Tax Law</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Business - More" href="https://www.justia.com/business/">More... </a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-block">
+                            <div class="title">
+                                <a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Law Students" href="https://www.justia.com/law-students/">Law Students</a>
+                                <span class="expand" data-directive="j-expand" data-section="footer-04">
+                                    <img src="https://justatic.com/v/20231003111152/shared/images/icons/svgfiles/blue/down.svg" alt="Arrow">
+                                </span>
+                            </div>
+                            <ul id="footer-04" class="footer-list -collapsed">
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Law Schools" href="https://www.justia.com/law-schools/">Law Schools</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Admissions" href="https://www.justia.com/law-students/">Admissions</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Financial Aid" href="https://www.justia.com/law-students/">Financial Aid</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Course Outlines" href="https://www.justia.com/law-schools/outlines/">Course Outlines</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Law Journals" href="https://www.justia.com/law-schools/">Law Journals</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Blogs" href="https://blawgsearch.justia.com/blogs/categories/law-student">Blogs</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Employment" href="https://www.justia.com/law-students/">Employment</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Law Students - More" href="https://www.justia.com/law-students/">More...</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-block">
+                            <div class="title">
+                                <a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="US Federal Law" href="https://law.justia.com/us/">US Federal Law</a>
+                                <span class="expand" data-directive="j-expand" data-section="footer-05">
+                                    <img src="https://justatic.com/v/20231003111152/shared/images/icons/svgfiles/blue/down.svg" alt="Arrow">
+                                </span>
+                            </div>
+                            <ul id="footer-05" class="footer-list -collapsed">
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="US Constitution" href="https://law.justia.com/constitution/us/">US Constitution</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="US Code" href="https://law.justia.com/codes/us">US Code</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Regulations" href="https://regulations.justia.com/">Regulations</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Supreme Court" href="https://supreme.justia.com/">Supreme Court</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Circuit Courts" href="https://law.justia.com/cases/federal/appellate-courts/">Circuit Courts</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="District Courts" href="https://law.justia.com/cases/federal/district-courts/">District Courts</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Dockets &amp; Filings" href="https://dockets.justia.com/">Dockets &amp; Filings</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="US Federal Law - More" href="https://law.justia.com/us/">More...</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-block">
+                            <div class="title">
+                                <a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="US State Law" href="https://law.justia.com/us-states/">US State Law</a>
+                                <span class="expand" data-directive="j-expand" data-section="footer-06">
+                                    <img src="https://justatic.com/v/20231003111152/shared/images/icons/svgfiles/blue/down.svg" alt="Arrow">
+                                </span>
+                            </div>
+                            <ul id="footer-06" class="footer-list -collapsed">
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="State Constitutions" href="https://law.justia.com/us-states/">State Constitutions</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="State Codes" href="https://law.justia.com/codes/">State Codes</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="State Case Law" href="https://law.justia.com/cases/">State Case Law</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="California" href="https://law.justia.com/california/">California</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Florida" href="https://law.justia.com/florida/">Florida</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="New York" href="https://law.justia.com/new-york/">New York</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Texas" href="https://law.justia.com/texas/">Texas</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="US State Law - More" href="https://law.justia.com/us-states/">More... </a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-block">
+                            <div class="title">
+                                <a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Other Databases" href="https://www.justia.com/">Other Databases</a>
+                                <span class="expand" data-directive="j-expand" data-section="footer-07">
+                                    <img src="https://justatic.com/v/20231003111152/shared/images/icons/svgfiles/blue/down.svg" alt="Arrow">
+                                </span>
+                            </div>
+                            <ul id="footer-07" class="footer-list -collapsed">
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="COVID-19 Resources" href="https://www.justia.com/covid-19/">COVID-19 Resources</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Legal Blogs" href="https://blawgsearch.justia.com/">Legal Blogs</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Business Forms" href="https://contracts.justia.com/">Business Forms</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Product Recalls" href="https://recalls.justia.com/">Product Recalls</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Patents" href="https://patents.justia.com/">Patents</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Trademarks" href="https://trademarks.justia.com/">Trademarks</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Countries" href="https://www.justia.com/countries/">Countries</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Other Databases - More" href="https://www.justia.com/">More...</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-block">
+                            <div class="title">
+                                <a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Marketing Solutions" href="https://www.justia.com/marketing/">Marketing Solutions</a>
+                                <span class="expand" data-directive="j-expand" data-section="footer-08">
+                                    <img src="https://justatic.com/v/20231003111152/shared/images/icons/svgfiles/blue/down.svg" alt="Arrow">
+                                </span>
+                            </div>
+                            <ul id="footer-08" class="footer-list -collapsed">
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Justia Connect Membership" href="https://www.justia.com/marketing/connect/">Justia Connect Membership</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Justia Lawyer Directory" href="https://www.justia.com/marketing/lawyer-directory/">Justia Lawyer Directory</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Justia Premium Placements" href="https://www.justia.com/marketing/lawyer-directory/#premium-placements">Justia Premium Placements</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Justia Elevate" href="https://www.justia.com/marketing/elevate/">Justia Elevate (SEO, Websites)</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Justia Amplify" href="https://www.justia.com/marketing/amplify/">Justia Amplify (PPC, GBP)</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Justia Onward Blog" href="https://onward.justia.com/">Justia Onward Blog</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Testimonials" href="https://www.justia.com/marketing/testimonials/">Testimonials</a></li>
+                                <li><a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer Resources" data-gtm-label="Marketing Solutions - More" href="https://www.justia.com/marketing/">More...</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-justia-blue">
+                <div class="wrapper">
+                    <div class="copyright">
+                        <span class="site">
+                            <span class="social-media">
+                                <a href="https://www.facebook.com/justia" title="Facebook" target="_blank" class="fb icon"><img src="https://lawyers.justia.com/s/facebook.svg" width="50" height="50" alt="Facebook" data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer" data-gtm-label="Social Media - Facebook"></a>
+                                <a href="https://twitter.com/justiacom" title="Twitter" target="_blank" class="twitter icon"><img src="https://lawyers.justia.com/s/twitter.svg" width="50" height="50" alt="Twitter" data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer" data-gtm-label="Social Media - Twitter"></a>
+                                <a href="https://www.linkedin.com/company/justia" title="LinkedIn" target="_blank" class="linkedin icon"><img src="https://lawyers.justia.com/s/linkedin.svg" width="50" height="50" alt="LinkedIn" data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer" data-gtm-label="Social Media - LinkedIn"></a>
+                                <a href="https://lawyers.justia.com/organization/justia-inc-16302" title="Justia Lawyer Directory" class="justia icon"><img src="https://lawyers.justia.com/s/justia.svg" width="50" height="50" alt="Justia" data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer" data-gtm-label="Social Media - Justia Lawyer Directory"></a>
+                                <a href="https://www.youtube.com/justia" title="Justia Lawyer Directory" target="_blank" class="youtube icon"><img src="https://lawyers.justia.com/s/youtube.svg" width="50" height="50" alt="YouTube" data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer" data-gtm-label="Social Media - YouTube"></a>
+                            </span>
+                            <span class="credits"> &copy; 2023 <a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer" data-gtm-label="Copyright" href="https://www.justia.com/">Justia</a></span>
+                        </span>
+                        <span class="nav">
+                            <a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer" data-gtm-label="Justia Connect" href="https://connect.justia.com/">Justia Connect</a>
+                            <a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer" data-gtm-label="Legal Portal" href="https://www.justia.com/">Legal Portal</a>
+                            <a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer" data-gtm-label="Company" href="https://company.justia.com/">Company</a>
+                            <a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer" data-gtm-label="Help" href="https://support.justia.com/">Help</a>
+                            <a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer" data-gtm-label="Terms of Service" href="https://www.justia.com/terms-of-service/">Terms of Service</a>
+                            <a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer" data-gtm-label="Privacy Policy" href="https://www.justia.com/privacy-policy/">Privacy Policy</a>
+                            <a data-gtm-type="click" data-gtm-category="Navigation" data-gtm-action="Footer" data-gtm-label="Marketing Solutions" class="nowrap" href="https://www.justia.com/marketing/">Marketing Solutions</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://justatic.com/v/20231003111152/shared/js/core.js"></script>
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            </body>
+</html>
